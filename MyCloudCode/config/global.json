@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "Blog": {
+            "applicationId": "ZO3HabLok7Yx5A77CLVwNSouStQm9n1hvmMGR8x0", 
+            "masterKey": "Az4akQqGXKQvYSlsXA7VL8OyCVG08VzEubh3ZxgN"
+        }, 
+        "_default": {
+            "link": "Blog"
+        }
+    }
+}
