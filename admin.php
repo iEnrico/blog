@@ -7,20 +7,22 @@
     <title>iEnrico Big Data</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/blog.css" rel="stylesheet"> 
-	<script id="blogs-tpl" type="text/x-handlebars-template">
-	    {{#each blog}}
-	    <div class="blog-post">
-	        <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
-	        <p class="blog-post-meta">At time by an author</p>
-	        <div>{{{content}}}</div>
-	    </div>
-	    {{/each}}
+	<script id="login-tpl" type="text/x-handlebars-template">
+	    <form class="form-signin" role="form">
+	        <h2 class="form-signin-heading">Please sign in</h2>
+	        <input type="text" name="username" class="form-control" placeholder="Username" required="" autofocus="">
+	        <input type="password" name="password" class="form-control" placeholder="Password" required="">
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	    </form>
 	</script>
-
+	 
+	<script id="welcome-tpl" type="text/x-handlebars-template">
+	    <h2>Welcome, {{username}}!</h2>
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="//www.parsecdn.com/js/parse-1.3.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/blog.js"></script>
+	<script src="js/admin.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>  
 	<script>
 
@@ -30,8 +32,8 @@
 	<div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-		    <a class="blog-nav-item active" href="index.php">Home</a>
-		    <a class="blog-nav-item" href="admin.php">Admin</a>
+		    <a class="blog-nav-item" href="index.php">Home</a>
+		    <a class="blog-nav-item active" href="admin.php">Admin</a>
         </nav>
       </div>
     </div>
@@ -41,7 +43,6 @@
         <h1 class="blog-title">The Bootstrap Blog</h1>
         <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
       </div>
-
       <div class="row">
         <div class="col-sm-8 blog-main">
 			<div class="main-container"></div>
